@@ -8,7 +8,67 @@
   <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/x-icon">
 </head>
 <body>
-  
+  <main>
+    <div class="title">
+      <h1>Contact Us</h1>
+    </div>
+    <div class="content">
+      <div class="name">
+        <div class="firstName-div">
+          <label for="first-name">First Name *</label>
+          <input type="text" id="first-name" required>
+          <span class="error">This field is required</span>
+        </div>
+        <!---->
+        <div class="lastName-div">
+          <label for="last-name">Last Name *</label>
+          <input type="text" id="last-name" required>
+          <span class="error">This field is required</span>
+        </div>
+      </div>
+      <div class="email-address">
+        <label for="email">Email Address *</label>
+        <input type="email" id="email" required>
+        <span class="error">Please enter a valid email address</span>
+      </div>
+      <div class="query-type">
+        <p>Query type *</p>
+        <div class="check-box">
+          <div class="checkbox-item">
+            <input type="checkbox" id="GE" required>
+            <label for="GE">General Enquiry</label>
+          </div>
+          <!---->
+          <div class="checkbox-item">
+            <input type="checkbox" id="SR" required>
+            <label for="SR">Support Request</label>
+          </div>
+          <!---->
+          
+        </div>
+        <span class="error">Please select a query type</span>
+      </div>
+      <div class="message-div">
+        <label for="message">Message</label>
+        <textarea id="message" rows="5" required></textarea>
+      </div>
+      <div class="consent-div">
+        <div class="csent">
+          <input type="checkbox" id="consent" required>
+          <label for="consent">I consent to being contacted by the team *</labe>
+        </div>
+        <span class="error">To submit this form, please consent to being contacted</span>
+      </div>
+      <div class="submit">
+        <button id="submit-btn">Submit</button>
+      </div>
+    </div>
+
+  </main>
+    <div class="message-sent">
+      <h1><svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 24 24"> <path fill="currentColor" d="M16.972 6.251a1.999 1.999 0 0 0-2.72.777l-3.713 6.682l-2.125-2.125a2 2 0 1 0-2.828 2.828l4 4c.378.379.888.587 1.414.587l.277-.02a2 2 0 0 0 1.471-1.009l5-9a2 2 0 0 0-.776-2.72z"/> </svg> Message Sent!</h1>
+      <p>Thanks for completing the form. We'll be in touch soon!</p>
+    </div>
   <script src="main.js"></script>
 </body>
 </html>
